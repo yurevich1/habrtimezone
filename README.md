@@ -13,7 +13,7 @@ Paste API-key into AndroidManifest.xml here:
 
 Than, register and activate account(s) on GeoNames.org: http://www.geonames.org/login
 
-write one or several accounts into this string in _.java file:
+write one or several accounts into this string in "_.java" file:
 public static final String[] names1 = {"your_account_1","your_account_2"};//ad infinitum
 
 Complite and enjoy.
