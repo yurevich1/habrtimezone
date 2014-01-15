@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scCoord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+			<LinearLayout
+                android:id="@+id/llCoord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+				
+				<Button
+				    android:id="@+id/btnCities"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/CitiesOnLine" />
+				<Button
+				    android:id="@+id/btnGMap"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/GoogleMap" />
+
+                <TextView
+                    android:id="@+id/tvDescCoord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Position"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/llLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvLatDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Latitude" />
+
+                    <TextView
+                        android:id="@+id/tvLat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/LatMos" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvLonDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Longitude" />
+
+                    <TextView
+                        android:id="@+id/tvLon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/LonMos" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnFromCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CommitCurCoords" />
+
+                <TextView
+                    android:id="@+id/tvUsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/UsedPos"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/llUseLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvUseLatDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Latitude" />
+
+                    <EditText
+                        android:id="@+id/etLat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/bget"
+                        android:text="@string/LatMos" >
+                        
+                        </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llUseLon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvUseLonDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Longitude" />
+
+                    <EditText
+                        android:id="@+id/etLon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/bget"
+                        android:text="@string/LonMos" />
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scCoordInit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+			<LinearLayout
+                android:id="@+id/llCoordInit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvInitDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DescInit" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cancel" />
+            </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

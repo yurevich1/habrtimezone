@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Habr Часовые пояса</string>
+    <string name="action_settings">Настройки</string>
+    <string name="Cancel">Отмена</string>
+	<string name="Save">Сохранить</string>
+	<string name="YouAreHere">Вы здесь</string>
+	<string name="ThisPlace">Установить</string>
+	<string name="ThisPlaceDesc">Нажмите сохранить</string>
+	<string name="Position">Текущее положение</string>
+	<string name="empty"></string>
+	<string name="DescInit">Устанавливается положение телефона по базовым станциям или GPS. Пожалуйста, подождите. Или нажмите \"Отмена\" и установите координаты вручную.</string>
+	<string name="LatMos">55.753636</string>
+	<string name="LonMos">37.619799</string>
+	<string name="Latitude">Широта:</string>
+	<string name="Longitude">Долгота:</string>
+	<string name="UsedPos">Координаты, которые будут использоваться:</string>
+	<string name="CommitCurCoords">Скопировать текущие координаты в редактируемые поля</string>
+	<string name="GoogleMap">Открыть Google Maps</string>
+	<string name="Canceled">Отменено</string>
+	<string name="TimeZone">Часовой пояс</string>
+	<string name="Error">Значение ErrorTZ</string>
+	<string name="CurName">Имя расположения:</string>
+	<string name="Search">Искать</string>
+	<string name="CitiesOnLine">Список городов Online</string>
+	<string-array name="ew_ar">
+	    <item>в.д.</item>
+	    <item>з.д.</item>
+	</string-array>
+	<string-array name="ns_ar">
+	    <item>с.ш.</item>
+	    <item>ю.ш.</item>
+	</string-array>
+</resources>
