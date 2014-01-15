@@ -66,10 +66,10 @@ public class AMain extends Activity implements OnClickListener {
     }
     private void initListeners() {
     	lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
+    	loc = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
     	if  (_.useGPS == 1) gpsLocationListener = new LocListener();
     	networkLocationListener = new LocListener();
-    	
+    	if (loc != null) {activated = true; viewType(1);}
 		if (_.useGPS == 1)
 		{
 			if (lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
