@@ -287,9 +287,9 @@ public class AGMap extends FragmentActivity implements OnCameraChangeListener, O
 	    int responsecode = -1;
 	    int pingtime = -1;
 	    int pingtime_head = -1;
-	    //String[] urlString = {"http://api.geonames.org/findNearbyJSON?lat=","&lng=" ,"&radius=50&username=horoscope&style=full&maxRows=1"};
+	    
 	    String[] urlString = {"http://api.geonames.org/findNearbyJSON?lat=","&lng=", "&radius=50&username=","&style=full&maxRows=1"};
-	    //http://api.geonames.org/findNearbyJSON?username=horoscope&lat=55.55&lng=38.01&radius=50&style=full&maxRows=1
+	    
 	    String json = "";
 		private JSONObject jObj;
 		//_Info city = new _Info();
